@@ -285,5 +285,6 @@ void getline(char *cadena,int cantidad)
 }
 } // Fin namespace sys
 
+
 #endif // CSYSTEM_H
 //### FIN DE ARCHIVO ##########################################################
