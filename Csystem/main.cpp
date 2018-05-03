@@ -82,11 +82,41 @@ using namespace std;
 //------------------------------------------------------------------------------
 int main()
 {
-    menuPrincipal();
-    //--------------------------------------------------------------------------
-    // FIN DE LA FUNCION main() SIN ERRORES.
-    //--------------------------------------------------------------------------
-    return 0;
+int opc;
+while(true){
+system("cls");
+cout<<"------------ALUMNOS-----------"<<endl;
+cout<<"1. DAR DE ALTA CONTACTO"<<endl;
+cout<<"2. MODIFICAR CONTACTO"<<endl;
+cout<<"3. ELIMINAR CONTACTO"<<endl;
+cout<<"4. BUSCAR CONTACTO"<<endl;
+cout<<"5. LISTAR CONTACTO"<<endl;
+cout<<"0. SALIR DEL PROGRAMA"<<endl;
+cout<<"OPCION: ";
+cin>>opc;
+system("cls");
+switch(opc){
+case 1://altaAlumno();
+break;
+case 2://listarArchivo();
+break;
+case 3: //mostrarAlumnoPorLegajo();
+break;
+case 4: //bajaLogicaAlumno2();
+break;
+case 5: //bajaLogicaAlumno2();
+break;
+case 0:return 0;
+break;
+ }
+ system("pause");
+ }
+ system("pause");
+ return 0;
+        //--------------------------------------------------------------------------
+        // FIN DE LA FUNCION main() SIN ERRORES.
+        //--------------------------------------------------------------------------
+        return 0;
 }
 
 //=============================================================================
