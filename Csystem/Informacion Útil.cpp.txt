@@ -32,6 +32,28 @@ Barra de menu:
  int telefono;
  char email[50];
 };
+//
+GRABAR REGISTRO
+
+if(grabarRegistro(reg)){
+ cout<<"REGISTRO AGREGADO"<<endl;
+ }
+ else{
+ cout<<"NO SE PUDO AGREGAR EL REGISTRO"<<endl;
+ }
+
+ bool grabarRegistro(struct persona reg){
+ FILE *pAlumno;
+ pPersona=fopen("personas.dat", "ab");
+ if(pPersona==NULL){
+ cout<<"ERROR DE ARCHIVO"<<endl;
+ return false;
+ }
+ bool grabo=fwrite(&reg, sizeof reg,1,pPersona);
+ fclose(pPersona);
+ return grabo;
+}
+
     2) Modificar contacto
     3) Eliminar contacto
     4) Buscar contacto
