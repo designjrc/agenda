@@ -1,0 +1,37 @@
+Barra de menu:
+    1) Añadir persona a la agenda
+    2) Modificar contacto
+    3) Eliminar contacto
+    4) Buscar contacto
+    5) Listar contacto
+
+    MENU
+    int main(){
+ int opc;
+ while(true){
+ system("cls");
+ cout<<"------------ALUMNOS-----------"<<endl;
+ cout<<"1. ALTA"<<endl;
+ cout<<"2. LISTAR REGISTROS"<<endl;
+ cout<<"3. MOSTRAR ALUMNO POR LEGAJO"<<endl;
+ cout<<"4. BAJA"<<endl;
+ cout<<"0. SALIR DEL PROGRAMA"<<endl;
+ cout<<"OPCION: ";
+ cin>>opc;
+ system("cls");
+ switch(opc){
+ case 1:altaAlumno();
+ break;
+ case 2:listarArchivo();
+ break;
+ case 3: mostrarAlumnoPorLegajo();
+ break;
+ case 4: bajaLogicaAlumno2();
+ break;
+ case 0:return 0;
+ break;
+ }
+ system("pause");
+ }
+ system("pause");
+ return 0;}
