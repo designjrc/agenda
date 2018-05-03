@@ -1,5 +1,37 @@
 Barra de menu:
     1) Añadir persona a la agenda
+
+    void altaAlumno(){
+ struct persona reg;
+ reg=cargarAlumno();
+ if(grabarRegistro(reg)){
+ cout<<"REGISTRO AGREGADO"<<endl;
+ }
+ //
+ struct persona cargarAlumno(){
+ struct persona reg;
+ cout<<"NOMBRE: ";
+ cin>>reg.nombre;
+ cout<<"APELLIDO: ";
+ cin>>reg.apellido;
+ cout<<"EMAIL: ";
+ cin>>reg.email;
+ cout<<endl;
+ cout<<"DIRECCION: ";
+ cin>>reg.direccion;
+ cout<<"TELEFONO: ";
+ cin>>reg.telefono;
+ return reg;
+}
+//
+ struct persona{
+ char nombre[30];
+ char apellido[30];
+ char apodo[30];
+ char domicilio[50];
+ int telefono;
+ char email[50];
+};
     2) Modificar contacto
     3) Eliminar contacto
     4) Buscar contacto
